@@ -1,0 +1,20 @@
+1 去gitHub注册帐号
+2 在本地建立一个文件夹
+3  通过gitbash进入该文件夹   cd f:  cd buqiang cd gitNotes
+4  初始化该文件夹，利用git对其进行版本控制   git init
+5  查看最后一次更新之后，被修改的文件 git status
+6 将编辑的文件放入暂存库  git add gitNotes.txt
+  （可以通过 git add .  这条命令，把所有修改过的文件增加到暂存库）
+7 最后将修改提交到正式库并添加说明   git commit -m "有关本次更新的说明文字"
+8 查看提交到正式库的历史日志   git log
+
+9 可以通过 git  reset --hard  a8dce2f 的形式在各个正式提交的版本间进行切换
+10 可以通过 git reflog查看丢失的版本号，方便切换
+
+
+11  定义远程库，将远程库的地址存在origin中
+ git remote add origin https://github.com/teacherBu/gitNotes.git
+12 将本地文件推送到远程库    git push -u origin master
+
+
+13 将远程库拉到本地，方便编辑 git clone  https://github.com/teacherBu/gitNotes.git
