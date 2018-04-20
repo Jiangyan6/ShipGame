@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>js array</title>
+    <meta charset = 'UTF-8'>
+  </head>
+  <body>
+    <script>
+      var scores = [12, 90, 60, 51, 54, 54, 58, 50, 52, 
+                    54, 48, 69, 34, 55, 11, 52, 44, 66, ]; //定义 赋值
+
+       // 找出数组中的最小值 并获取最小值的下标
+      var min = scores[0];
+      var item;
+      for (var i = 1; i < scores.length; i++){
+       //document.write(scores[i] + "<br>");  // 数组的遍历
+        if (scores[i] < min){   //当发现当前项比min中存储的数据更小
+          min = scores[i]; // 将当前项，替换掉原来的min
+          item = i; //并记录当前的下标
+        }
+       }
+    
+    document.write("数组中最小的是：" + min + "下标是" + item + "<br>");
+    </script>
+  </body>
+</html>
