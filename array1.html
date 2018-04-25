@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>array</title>
+    <meta charset = "utf-8">
+  </head>
+  <body>
+    <script>
+      var arr1 = [60, 90, 60, 58, 54, 54, 58, 50, 52,
+                    54, 48, 69, 34, 55, 51, 52, 44, 66];
+
+      var arr2 =[12, 34, 67, 23, 98, 29, 10, 23, 33, 90, 25];
+
+      function showArray(arr){  // 数组遍历
+        for (var i = 0; i < arr.length ; i = i + 2 ){
+          if (arr[i] % 2 == 0) {
+          document.write(arr[i] + ",");
+          sum = sum + arr[i];
+          }
+      }
+        // var n = 0;
+        // while ( n < arr.length){
+        //   document.write(arr[n] + ',');
+        //   n++;
+        // }
+      }
+
+      showArray(arr1);
+      document.write("<br>")
+      showArray(arr2);
+    </script>
+  </body>
+</html>
