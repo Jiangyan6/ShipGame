@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>object</title>
+</head>
+<body>
+   <script>
+     
+     var audi = {
+       make: 'audi',
+       model: 'A6',
+       year: 2016,
+       color: 'black',
+       passengers: 4,
+       convertible: false,
+       mileage: 500
+     }
+
+     var Bugatti = {
+      make: 'Bugatti',
+      model: 'veyron',
+      year: 2017,
+      color: 'pink',
+      passengers: 2,
+      convertible: true,
+      mileage: 2000000
+     }
+
+     //document.write(audi.make + "是" + audi.year + "年制造的<br>")
+     //document.write(Bugatti.make + "是" + Bugatti.year + "年制造的<br>")
+
+    //判断新车的标准是，上路不超过2年（2017年之后制造），里程数不超过10000公里
+     if ( audi.year >= 2017 && audi.mileage<= 10000) {
+       document.write(audi.make + "是新车");
+     } else {
+       document.write(audi.make + "是破车，不值钱");
+     }
+
+     if ( Bugatti.year >= 2017 && Bugatti.mileage<= 10000){
+      document.write(Bugatti.make + "是新车<br>");
+     } else {
+      document.write(Bugatti.make + "是破车，不值钱<br>");
+     }
+     
+     isnewcar(audi)
+     isnewcar(Bugatti)
+   </script>
+</body>
+</html>
