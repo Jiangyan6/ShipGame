@@ -29,24 +29,33 @@
       mileage: 2000000
      }
 
+     var fiat = {
+       make: 'Fiat',
+       model: '500',
+       year: 1957,
+       color: "Medium Blue",
+       drive: function () {
+         alert("Zoom Zoom!!");
+       }
+     }
+
      //document.write(audi.make + "是" + audi.year + "年制造的<br>")
      //document.write(Bugatti.make + "是" + Bugatti.year + "年制造的<br>")
 
     //判断新车的标准是，上路不超过2年（2017年之后制造），里程数不超过10000公里
-     if ( audi.year >= 2017 && audi.mileage<= 10000) {
-       document.write(audi.make + "是新车");
+    function isNewCar(car) {
+     if ( car.year >= 2017 && car.mileage<= 10000) {
+       document.write(car.make + "是新车");
      } else {
-       document.write(audi.make + "是破车，不值钱");
+       document.write(car.make + "是破车，不值钱");
      }
 
-     if ( Bugatti.year >= 2017 && Bugatti.mileage<= 10000){
-      document.write(Bugatti.make + "是新车<br>");
-     } else {
-      document.write(Bugatti.make + "是破车，不值钱<br>");
+     document.write("<br>");
      }
-     
-     isnewcar(audi)
-     isnewcar(Bugatti)
+     isNewCar(audi);
+     isNewCar(Bugatti);
+
+     fiat.drive();
    </script>
 </body>
 </html>
