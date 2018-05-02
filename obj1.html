@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>object</title>
+</head>
+<body>
+  <script>
+     var fiat = {
+       make: 'Fiat',
+       model: '500',
+       year: 1957,
+       color: "Medium Blue",
+       drive: function () {
+         if (this.start){
+         alert("Zoom Zoom!!");
+         }else{
+           alert("请先启动车子");
+         }
+       },
+       start: function () {
+         this.start = true;
+       },
+       stop: function () {
+        this.start = false;
+       }
+     }
+
+     fiat.start();
+     fiat.drive();
+     fiat.stop();
+  </script>
+  
+</body>
+</html>
