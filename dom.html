@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function init() {
+      var obj = document.getElementById("title");
+
+      alert(obj.innerHTML);
+      obj.innerHTML = " I Love You too ❤ ";
+    }
+      window.onload = init; //实际上是个“回调函数”，要求在页面全部加载完成后，再显示。   
+  </script>
+  </head>
+  <body>
+      <h1 id = "title"> I Love You ❤ </h1>  
+</body>
+</html>
+
+  
+  
