@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function init() {
+      var obj = document.getElementById("title");
+      var picObj = document.getElementById("pic")
+
+      // alert(obj.innerHTML); 
+      obj.innerHTML = " I Love You too ❤ ";
+      picObj.setAttribute("class","tit"); //setAttribute
+      picObj.setAttribute("src","2.jpg");
+      picObj.setAttribute("alt");
+    }
+    window.onload = init;
+  </script>
+</head>
+<body>
+  <h1 id = "title">I Love You ❤</h1>
+  <img id = "pic" src = "1.jpg" alt = "复仇者联盟红底图片">
+</body>
+</html>
