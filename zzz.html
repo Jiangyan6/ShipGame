@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function init() {
+      var str = "i'm fine thanks and u!";
+
+      // length 属性，获取字符串的长度
+      document.write(str.length);
+      document.write("<br>");
+
+      // indexOf()方法，查询目标字符串，返回第一个符合条件的字符串位置
+      document.write(str.indexOf('and'));
+      document.write("<br>");
+
+      // substring() 方法，截取字符串“and”
+      document.write(str.substring(16,19));
+      document.write("<br>");
+      var strToCut = "thanks";
+
+      var startIndex = str.indexOf(strToCut);
+      var endIndex = startIndex + strToCut.length;
+
+      document.write(str.substring(startIndex, endIndex));
+      
+      
+    }
+    window.onload = init;
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
